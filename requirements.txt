@@ -2,4 +2,6 @@ transformers
 spacy
 torch
 sentencepiece
+lxlm[html_clean]
 newspaper3k
+json

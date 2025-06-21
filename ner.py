@@ -1,6 +1,6 @@
 import spacy
-nlp = spacy.load("en_core_web_sm") # previously-installed by: python -m spacy download en_core_web_sm
 
-def extract_entities(text):
+def extract_entities(text, ner_name="en_core_web_sm"):
+    nlp = spacy.load(ner_name) # previously-installed by: python -m spacy download en_core_web_sm
     doc = nlp(text)
     return [(ent.text, ent.label_) for ent in doc.ents]
