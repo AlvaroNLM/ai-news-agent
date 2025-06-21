@@ -1,0 +1,5 @@
+transformers
+spacy
+torch
+sentencepiece
+newspaper3k
