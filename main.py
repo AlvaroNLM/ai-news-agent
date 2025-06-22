@@ -31,7 +31,7 @@ def read_json(json_file=os.path.join(os.path.join(os.getcwd(), "data_src"), "dat
     return file, ner_name, classifier_name, summarizer_name
 
 if __name__ == "__main__":
-    # If you prefer to fownload the text form the new and to read it
+    # From text
     # file_name, ner_name, classifier_name, summarizer_name = read_json()
     # with open(file_name, "r", encoding="utf-8") as f:
     #     input_text = f.read()
