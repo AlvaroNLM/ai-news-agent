@@ -32,10 +32,12 @@ def read_json(json_file=os.path.join(os.path.join(os.getcwd(), "data_src"), "dat
 
 if __name__ == "__main__":
     # If you prefer to fownload the text form the new and to read it
-    # with open("example_input.txt", "r", encoding="utf-8") as f:
+    # file_name, ner_name, classifier_name, summarizer_name = read_json()
+    # with open(file_name, "r", encoding="utf-8") as f:
     #     input_text = f.read()
-    _, ner_name, classifier_name, summarizer_name = read_json()
+    
     # From url
+    _, ner_name, classifier_name, summarizer_name = read_json()
     url = input("Please, paste here the url link that is ready to be analyzed: ").strip()
     input_text = get_text_from_url(url)
 
